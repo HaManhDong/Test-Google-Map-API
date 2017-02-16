@@ -56,6 +56,7 @@ function initAutocomplete() {
                 position: place.geometry.location
             }));
 
+
             if (place.geometry.viewport) {
                 // Only geocodes have viewport.
                 bounds.union(place.geometry.viewport);
@@ -64,5 +65,9 @@ function initAutocomplete() {
             }
         });
         map.fitBounds(bounds);
+
+        $('#place_name_result').text(markers[0].title);
+
+        console.log(markers);
     });
 }
