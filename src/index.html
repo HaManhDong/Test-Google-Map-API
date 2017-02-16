@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Places Searchbox</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <!--<link rel="stylesheet" type="text/css" href="bootstrap.min.css">-->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+<div class="container">
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-md-8">
+            <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+            <div id="map" style="width: auto; height: 400px;"></div>
+        </div>
+        <div class="col-md-4">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label class="col-sm-4">Địa chỉ:</label>
+                    <div class="col-sm-8">
+                        <p>Hà Nội</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-4">Tên nhà hàng:</label>
+                    <div class="col-sm-8">
+                        <p>Nhà Hàng a</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-4">
+                        <button type="button" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </form>
+
+            <div style="margin-top: 20px; background-color: whitesmoke;
+                        width:auto; height: 250px;"></div>
+
+        </div>
+    </div>
+</div>
+
+
+<!--<script src="lib/bootstrap/bootstrap.min.js"></script>-->
+<script src="js.js"></script>
+<script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCx3_TFQnARbjZjBGqJGbCm-XdGSPQ8C2M&libraries=places&callback=initAutocomplete"
+        async defer></script>
+</body>
+
+</html>
