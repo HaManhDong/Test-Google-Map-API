@@ -15,32 +15,55 @@
     <div class="row" style="margin-top: 50px;">
         <div class="col-md-8">
             <input id="pac-input" class="controls" type="text" placeholder="Search Box">
-            <div id="map" style="width: auto; height: 400px;"></div>
+            <div id="map" style="width: auto; height: 550px;"></div>
         </div>
         <div class="col-md-4">
             <form class="form-horizontal">
                 <div class="form-group">
                     <label class="col-sm-4">Địa chỉ:</label>
                     <div class="col-sm-8">
-                        <p>Hà Nội</p>
+                        <p id="place_address_result"></p>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-sm-4">Tên nhà hàng:</label>
                     <div class="col-sm-8">
-                        <p id="place_name_result">Nhà Hàng a</p>
+                        <p id="place_name_result"></p>
                     </div>
                 </div>
                 <div class="form-group">
-                    <div class="col-sm-offset-2 col-sm-4">
-                        <button type="button" class="btn btn-primary">Save</button>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary" id="btnSaveResult">Save</button>
                     </div>
                 </div>
             </form>
 
-            <div style="margin-top: 20px; background-color: whitesmoke;
-                        width:auto; height: 250px;"></div>
+            <div class="pre-scrollable" style="margin-top: 30px; background-color: whitesmoke;
+                        width:auto; height: 350px;">
 
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <td >
+                            Nhà hàng Âu cơ
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-info" id="1">View</button>
+                            <button type="button" class="btn btn-danger">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Nhà hàng a
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-info">View</button>
+                            <button type="button" class="btn btn-danger">Delete</button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </div>
