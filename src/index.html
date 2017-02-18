@@ -10,9 +10,10 @@
     <script src="lib/jquery/jquery-3.1.1.min.js"></script>
 </head>
 
-<body>
+<body class="bg-info">
 <div class="container">
-    <div class="row" style="margin-top: 50px;">
+    <h2 class="text-center">Google Places API Web service</h2>
+    <div class="row" style="margin-top: 30px;">
         <div class="col-md-8">
             <input id="pac-input" class="controls" type="text" placeholder="Search Box">
             <div id="map" style="width: auto; height: 550px;"></div>
@@ -33,7 +34,7 @@
                 </div>
                 <div class="form-group">
                     <div class="text-center">
-                        <button type="button" class="btn btn-primary" id="btnSaveResult">Save</button>
+                        <button type="button" class="btn btn-primary" id="btnSaveResult" disabled>Save</button>
                     </div>
                 </div>
             </form>
@@ -42,23 +43,14 @@
                         width:auto; height: 350px;">
 
                 <table class="table">
-                    <tbody>
+                    <tbody id="body_table_place_saved">
                     <tr>
-                        <td >
+                        <td>
                             Nhà hàng Âu cơ
                         </td>
                         <td>
-                            <button type="button" class="btn btn-info" id="1">View</button>
-                            <button type="button" class="btn btn-danger">Delete</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Nhà hàng a
-                        </td>
-                        <td>
-                            <button type="button" class="btn btn-info">View</button>
-                            <button type="button" class="btn btn-danger">Delete</button>
+                            <button type="button" class="btn btn-info" onclick="view_place('ChIJF7u7xvKqNTERZlxP8z7n0gs')">View</button>
+                            <button type="button" class="btn btn-danger" onclick="remove_place(this.parentElement.parentElement)">Delete</button>
                         </td>
                     </tr>
                     </tbody>
